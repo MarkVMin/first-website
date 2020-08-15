@@ -1,38 +1,533 @@
-.App {
+@font-face {
+  font-family: "Abel";
+  src:url(Fonts/Abel/Abel-Regular.ttf);
+}
+@font-face {
+  font-family: "Merriweather";
+  src:url(Fonts/Merriweather/Merriweather-Light.ttf);
+}
+@font-face {
+  font-family: "Open-Sans";
+  src:url(Fonts/Open_Sans_Condensed/OpenSansCondensed-Light.ttf);
+}
+@font-face {
+  font-family: "PT-Sans";
+  src:url(Fonts/PT_Sans/PTSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Quicksand";
+  src:url(Fonts/Quicksand/static/Quicksand-Light.ttf)
+}
+@font-face {
+  font-family: "Yellowtail";
+  src:url(Fonts/Yellowtail-Regular.ttf)
+}
+@font-face {
+  font-family: "Open-Sans bold";
+  src:url(Fonts/Open_Sans_Condensed/OpenSansCondensed-Bold.ttf)
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src:url(Fonts/RobotoMono-VariableFont_wght.ttf)
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.title {
+  font-family: 'Merriweather';
+  font-size: 80px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pg {
+  line-height: 1.6em;
+  margin-top: 150px;
+  font-family: 'Open-Sans bold';
+  font-size: 20px;
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+head {
+  margin: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  z-index:1;
+  position:fixed;
+  top:0;
+  width:100%;
+  font-family:'Quicksand';
+  background-color: rgb(235,235,235);
+  overflow: auto;
+}
+
+.link {
+  padding: 30px;
+  display: inline-block;
+  color: black;
+  text-decoration:none;
+  font-size: 26px;
+  width: 25%;
+  text-align: center;
+}
+
+.link:hover{
+  background-color:lightgray;
+  color: black;
+}
+
+.active {
+  background-color: lightslategray;
+  color: black;
+}
+
+body {
+  overflow-x: hidden;
+  margin:0px;
+  padding:0px;
+}
+
+/*HOME START*/
+
+#banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+#banner-image {
+  background-image:url('Pictures/mountainrange2.jpg');
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:100%;
+  height:100vh;
+  position: absolute;
+  margin:0;
+}
+
+#header {
+  width:100%;
+  margin-top: 0;
+  top: 20%;
+  position:relative;
+  text-align: center;
+}
+
+#Markings {
+  font-family: 'Abel';
+  font-size: 125px;
+  text-shadow: 0 0 6px white;
+  text-align: center;
+}
+
+#of-a {
+  font-family: 'Abel';
+  font-size: 80px;
+  text-shadow: 0 0 6px white;
+  text-align: center;
+}
+
+#Minimalist {
+  font-family: 'Abel';
+  font-size: 110px;
+  text-shadow: 0 0 6px white;
+  text-align: center;
+}
+
+#subtext {
+  font-family: 'PT-Sans';
   color: white;
+  font-size: 15px;
+  text-shadow: 0 0 4px black;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+
+#preamble {
+  width: 100%;
+  height:100vh;
+  text-align: center;
+  background-color: rgb(66, 80, 62);
+  color: rgb(255,212,175);
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#photo-flower {
+  background-image:url('Pictures/rose.jpg');
+  background-size:contain;
+  background-repeat: no-repeat;
+  margin-right: 10%;
+  margin-top: 10%;
+  float: right;
+  width:30vw;
+  height:60vh;
+}
+
+#preamble-text {
+  position:relative;
+  top: 15%;
+  margin-left: 10%;
+  margin-right: 55%;
+}
+
+
+#Minimalism {
+  width: 100%;
+  height: 95vh;
+  text-align: center;
+  background-color: ghostwhite;
+  color: rgb(112, 112, 112);
+  position:relative;
+}
+
+#minimalism-text {
+  top: 5%;
+  position:relative;
+  display: block;
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+}
+
+#most-recent {
+  width: 100%;
+  height:95vh;
+  text-align: center;
+  background-color: rgb(4, 43, 82);
+  color: rgb(244, 245, 210);
+  position: relative;
+}
+
+#most-recent-text {
+  top: 5%;
+  position:relative;
+  display: block;
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+}
+
+
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+h2 {
+  margin: 0;
+}
+
+
+/*CREATIVE START */
+
+
+
+#creative-header {
+  background-size: 100% 100%;
+  width:100vw;
+  height: 100vh;
+  background-image:url('Pictures/snowscape.jpg');
+}
+
+.blurred-box{
+  position: relative;
+  width: 30vw;
+  height: 30vh;
+  top: calc(50% - 15vh);
+  left: calc(50% - 15vw);
+  backdrop-filter: blur(7px);
+  text-align: center;
+}
+
+#creative-text{
+  transform: translate(-50%, -50%);
+  font-size:120px;
+	letter-spacing:0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 
+						8px 8px #ffb6c1,
+						20px 20px #00008B;
+  position:relative;
+  top: 20%;
+  font-family: 'Yellowtail';
+  text-align: center;
+}
+
+
+/* CODING START */
+
+.gradient-bg {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	background: linear-gradient(-45deg, #7F7F7F, #000000, #7F7F7F, #FFFFFF);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+}
+
+.white-bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(235,235,235);
+  position: relative;
+}
+
+.black-bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0,0,0);
+  position:relative;
+}
+
+.white-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 30vw;
+  height: 30vh;
+  background: #008F11;
+
+}
+
+#coding-title {
+	background: linear-gradient(45deg, #FFFFFF, #7F7F7F, #000000, #7F7F7F, #FFFFFF);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  top: 27%;
+  text-align: center;
+  line-height: 100%;
+  font-size: 9em;
+  font-family: 'Roboto Mono';
+  width:100%;
+  height: 100%;
+}
+
+
+
+/* ABOUT START */
+.lightergrey {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(40,40,40);
+  position: relative;
+}
+
+.about-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding-top: 2%;
+  width: 40%;
+  height: 80%;
+}
+
+.about-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-image:url('Pictures/Mark.png');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.about-header-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-image:url('Pictures/Markcutout.png');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0.0;
+  transition: 0.3s;
+}
+
+.about-container:hover .about-header-head{
+  opacity: 1;
+}
+
+.about-text {
+  position:absolute;
+  text-align: left;
+  font-family: 'Abel';
+  font-size: 6.5vw;
+  color: rgb(100,100,100);
+  opacity: 0.75;
+  transition: 0.3s;
+}
+
+.about-container:hover .about-text {
+  opacity:0.3;
+}
+
+.about-text-name {
+  position:absolute;
+  text-align: left;
+  font-family: 'Abel';
+  font-size: 6.5vw;
+  color: rgb(100,100,100);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.about-container:hover .about-text-name{
+  color: rgb(64, 185, 189);
+  opacity: 0.8;
+}
+
+.darkergrey {
+  position: relative;
+  background-color: rgb(30,30,30);
+  width: 100vw;
+  height: 100vh;
+}
+
+.who-title {
+  position: relative;
+  color: lightgray;
+  font-family: 'Open-Sans bold';
+  font-size: 4vw;
+  top: 20%;
+  left: 7%;
+}
+
+.who-text {
+  line-height: 1.7em;
+  letter-spacing: 0.075em;
+  position:relative;
+  color: lightgray;
+  font-family: 'Open-Sans';
+  font-size: 1.3vw;
+  top:33%;
+  left:7%;
+}
+
+.broken-leg-mark {
+  background-size:contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 34%;
+  top: 25%;
+}
+
+.osburrito {
+  background-size:contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right:15%;
+  top: 15%;
+}
+
+
+.why-title {
+  position: relative;
+  color: ghostwhite;
+  font-family: 'Open-Sans bold';
+  font-size: 4vw;
+  top: 20%;
+  left: 45%;
+}
+
+.why-text {
+  line-height: 1.7em;
+  letter-spacing: 0.075em;
+  position:relative;
+  color: ghostwhite;
+  font-family: 'Open-Sans';
+  font-size: 1.3vw;
+  top:33%;
+  left: 45%;
+}
+
+.plane-image {
+  background-size:contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 28%;
+  top: 55%;
+}
+
+.city-image {
+  background-size:contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left:8%;
+  top: 10%;
+}
+
+.city-image-2 {
+  background-size:contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left:10%;
+  top: 48%;
+}
+
+
+.resume {
+  line-height: 1.7em;
+  letter-spacing: 0.075em;
+  position:relative;
+  color: ghostwhite;
+  font-family: 'PT-Sans';
+  font-size: 2.3vw;
+  top:20%;
+  left: 25%;
+}
+
+.resume {
+  line-height: 1.7em;
+  letter-spacing: 0.06em;
+  position:relative;
+  color: ghostwhite;
+  font-family: 'PT-Sans';
+  font-size: 2.3vw;
+  top:20%;
+  left: 15%;
+}
+
+.contact {
+  line-height: 1.7em;
+  letter-spacing: 0.04em;
+  position:relative;
+  color: ghostwhite;
+  font-family: 'PT-Sans';
+  font-size: 1.3vw;
+  left: 25%;
+  top: 70%;
 }
