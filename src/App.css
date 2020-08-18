@@ -268,6 +268,12 @@ h2 {
   text-align: center;
 }
 
+#creative-subtext {
+  font-size: 60px;
+  font-family: 'Quicksand';
+  text-align: center;
+  margin-top: 22%;
+}
 
 /* CODING START */
 
@@ -321,6 +327,26 @@ h2 {
   font-family: 'Roboto Mono';
   width:100%;
   height: 100%;
+}
+
+#website-title {
+  font-family: 'Roboto Mono';
+  font-size: 4em;
+  text-align: center;
+  color: ghostwhite;
+  position: relative;
+  top: 18%;
+}
+
+#website-pg {
+  font-family: 'Roboto Mono';
+  font-size: 1em;
+  text-align: left;
+  width: 70%;
+  top: 40%;
+  left: 15%;
+  color: ghostwhite;
+  position: relative;
 }
 
 

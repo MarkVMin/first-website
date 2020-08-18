@@ -44,9 +44,10 @@ const Creative = () => {
     >
       <Snowstorm/>
       <div id = "creative-header"> 
-      <div className = "blurred-box">
-        <span id = "creative-text">Creative</span>
-      </div>
+        <div className = "blurred-box">
+          <span id = "creative-text">Creative</span>
+        </div>
+        <div id = "creative-subtext">To Be Announced...</div>
       </div>
     </motion.div>
   );

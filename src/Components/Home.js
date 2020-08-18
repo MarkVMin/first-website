@@ -65,11 +65,11 @@ const Home = () => {
             </h2>
           </div>
           <p className="pg" data-aos="fade-left">
-            Markings of a Minimalist, formerly Musings of a Minimalist, was renamed due to the name already being taken which is sad because I think that name has a better ring to it, but this new name not only incorporates both parts of my name but has a meaning with a different and more powerful meaning.
-            <br />
-            <br />
             This is a small personal project that I hope to turn into a place for me to store all my ideas and creations into an easily navigatable and easy to look at format. Like most people, I have so many things that I want to try and I feel that by having a place
-            to put these things, I'll be not only more inclined to do it, but also more inclined the stick with an idea.
+            to put these things, I'll be not only more inclined to do it, but also more inclined the stick with an idea. 
+            <br/><br/>
+            One of my biggest worries in life is that I don't have enough exposure to the more creative side of life. I've always been pushed into taking
+            a STEM based curriculum and although I do enjoy these kinds of classes, I want to dip my toes into unexplored waters and make sure I'm not missing out.
           </p>
         </div>
       </div>
@@ -79,19 +79,12 @@ const Home = () => {
             <span className="title" data-aos="fade-down">Namesake</span>
           </h2>
           <p className="pg" data-aos="fade-up">
-            Filler filler filler filler filler
-            Filler filler filler filler filler
-            Filler filler filler filler filler
-            Filler filler filler filler filler
-            Filler filler filler filler filler
-            Filler filler filler filler filler
-            Filler filler filler filler filler
-            Filler filler filler filler filler
-            Filler filler filler filler filler
-            Filler filler filler filler filler
-            Filler filler filler filler filler
-            Filler filler filler filler filler
-            Filler filler filler filler filler
+            Markings of a Minimalist was originally supposed to be called Musings of a Minimalist but I decided to change it even though it hurts. I do believe that Musings rolls off the tongue better but I truly think that Markings applies more to what I am trying to achieve.
+            We all strive to be remembered in this world in one form or another and through the process of turning an idea into something people can interact with, I can leave my "Markings" on the world. 
+            <br/> <br/>
+            The "Minimalist" can be misleading. I wouldn't call myself the dictionary definition of a Minimalist. My definition is a rather twisted interpretation. As long as I have a bed to sleep in, food to eat, and a computer
+            to use, I am happy. I'm almost entirely out of my comfort zone with this project and the projects to come. I want to experience what life has to offer to make sure I'm truly content with what I currently have.
+            It's possible I may change after these experiences and that's ok, but for now the name fits.
           </p>
         </div>
       </div>
@@ -101,7 +94,7 @@ const Home = () => {
             <span className="title" data-aos="fade-down">Most Recent Project</span>
           </h2>
           <p className="pg" data-aos="fade-up">
-            Random stuff
+            This website!
           </p>
         </div>
       </div>

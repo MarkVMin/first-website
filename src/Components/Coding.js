@@ -49,7 +49,9 @@ const Coding = () => {
         </div>
       </div>
       <div className="black-bg">
+        <h2 id = "website-title">This Website</h2>
 
+        <p id = "website-pg">Fifty Nifty United States</p>
       </div>
     </motion.div>
   );
