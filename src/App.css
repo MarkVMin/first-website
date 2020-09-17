@@ -162,7 +162,7 @@ body {
   top: 20%;
   height: 50%;
   width: 36%;
-  background-color: grey;
+  background-color: rgb(128, 128, 128);
   opacity: 70%;
   position: absolute;
 }
