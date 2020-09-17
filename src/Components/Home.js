@@ -45,6 +45,7 @@ const Home = () => {
     <div>
       <div id="banner">
         <div id="banner-image" />
+        <div id="box"></div>
         <div id="header">
           <h1>
             <span id="Markings">Markings</span><br />
@@ -94,7 +95,7 @@ const Home = () => {
             <span className="title" data-aos="fade-down">Most Recent Project</span>
           </h2>
           <p className="pg" data-aos="fade-up">
-            This website!
+            This website! Click the image to see the full article!
           </p>
         </div>
       </div>
