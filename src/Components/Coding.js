@@ -60,7 +60,7 @@ const Coding = () => {
         <Parallax
           className="website-pic" y={[-20, 40]} 
         >
-        <img data-aos="fade-down" src={require('../Pictures/Website.png')} style={{width:"30vw"}}/>
+        <img data-aos="fade-down" src={require('../Pictures/Website.jpg')} style={{width:"30vw"}}/>
         </Parallax>
       </div>
     </motion.div>
