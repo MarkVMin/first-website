@@ -157,11 +157,11 @@ body {
   text-align: center;
 }
 
-#box {
-  left: 35%;
+#grey-box {
+  left: 32%;
   top: 20%;
   height: 50%;
-  width: 30%;
+  width: 36%;
   background-color: grey;
   opacity: 70%;
   position: absolute;
@@ -408,7 +408,7 @@ h2 {
   right: 0;
   bottom: 0;
   margin: auto;
-  background-image:url('Pictures/Markcutout.jpg');
+  background-image:url('Pictures/Markcutout.png');
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
