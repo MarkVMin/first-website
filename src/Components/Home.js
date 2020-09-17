@@ -44,8 +44,8 @@ const Home = () => {
     >
     <div>
       <div id="banner">
-        <div id="banner-image" />
-        <div id="grey-box"></div>
+        <div id="banner-image" /> <br/>
+        <div id="grey-box"></div> <br/>
         <div id="header">
           <h1>
             <span id="Markings">Markings</span><br />
