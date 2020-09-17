@@ -393,7 +393,7 @@ h2 {
   right: 0;
   bottom: 0;
   margin: auto;
-  background-image:url('Pictures/Mark.png');
+  background-image:url('Pictures/Mark.jpg');
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -408,7 +408,7 @@ h2 {
   right: 0;
   bottom: 0;
   margin: auto;
-  background-image:url('Pictures/Markcutout.png');
+  background-image:url('Pictures/Markcutout.jpg');
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
