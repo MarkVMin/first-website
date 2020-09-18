@@ -46,13 +46,17 @@ const About = () => {
       <div className="lightergrey">
         <div className="about-container" data-aos="fade-up" data-aos-duration="2500">
           <div className="about-header"></div>
-          <h1 className="about-text-name" >
-            Mark <br/>
-            Min
+          <h1 className="about-text-name-first" >
+            MARK
           </h1>
-          <h1 className="about-text">
-            Markings of a <br/>
-            Minimalist
+          <h1 className="about-text-name-second" >
+            MIN
+          </h1>
+          <h1 className="about-text-first">
+            MARKINGS OF A
+          </h1>
+          <h1 className="about-text-second">
+            MINIMALIST
           </h1>
           <div className="about-header-head"></div>
         </div>

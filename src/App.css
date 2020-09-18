@@ -32,6 +32,36 @@
   src:url(Fonts/RobotoMono-VariableFont_wght.ttf)
 }
 
+@font-face {
+  font-family: "Krona One";
+  src:url(Fonts/Krona_One/KronaOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Economica";
+  src:url(Fonts/Economica/Economica-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Poiret";
+  src:url(Fonts/Poiret_One/PoiretOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Passion";
+  src:url(Fonts/Passion_One/PassionOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Paytone";
+  src:url(Fonts/Paytone_One/PaytoneOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:url(Fonts/Poppins/Poppins-Bold.ttf);
+}
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -131,21 +161,18 @@ body {
 #Markings {
   font-family: 'Abel';
   font-size: 125px;
-  text-shadow: 0 0 6px white;
   text-align: center;
 }
 
 #of-a {
   font-family: 'Abel';
   font-size: 80px;
-  text-shadow: 0 0 6px white;
   text-align: center;
 }
 
 #Minimalist {
   font-family: 'Abel';
   font-size: 110px;
-  text-shadow: 0 0 6px white;
   text-align: center;
 }
 
@@ -153,7 +180,6 @@ body {
   font-family: 'PT-Sans';
   color: white;
   font-size: 20px;
-  text-shadow: 0 0 10px black;
   text-align: center;
 }
 
@@ -292,7 +318,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-	background: linear-gradient(-45deg, #7F7F7F, #000000, #7F7F7F, #FFFFFF);
+	background: linear-gradient(-45deg, #696969, #000000, #696969, #000000);
 	background-size: 400% 400%;
 	animation: gradient 20s ease infinite;
 }
@@ -323,7 +349,7 @@ h2 {
 }
 
 #coding-title {
-	background: linear-gradient(45deg, #FFFFFF, #7F7F7F, #000000, #7F7F7F, #FFFFFF);
+	background: linear-gradient(45deg, #000000, #696969, #000000, #696969, #000000);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;  
   -webkit-background-clip: text;
@@ -382,14 +408,14 @@ h2 {
   bottom: 0;
   margin: auto;
   padding-top: 2%;
-  width: 40%;
+  width: 65%;
   height: 80%;
 }
 
 .about-header {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 7%;
+  left: 10%;
   right: 0;
   bottom: 0;
   margin: auto;
@@ -403,8 +429,8 @@ h2 {
 
 .about-header-head {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 7%;
+  left: 10%;
   right: 0;
   bottom: 0;
   margin: auto;
@@ -422,33 +448,71 @@ h2 {
   opacity: 1;
 }
 
-.about-text {
+.about-text-first {
+  letter-spacing: 0.2em;
+  left: 3.1%;
   position:absolute;
   text-align: left;
-  font-family: 'Abel';
-  font-size: 6.5vw;
+  font-family: 'Poppins';
+  font-size: 5.5vw;
   color: rgb(100,100,100);
-  opacity: 0.75;
+  opacity: 0.60;
   transition: 0.3s;
 }
 
-.about-container:hover .about-text {
+.about-text-second {
+  letter-spacing: 0.5em;
+  left: 3.1%;
+  top: 25%;
+  position:absolute;
+  text-align: left;
+  font-family: 'Poiret';
+  font-size: 7vw;
+  color: rgb(100,100,100);
+  opacity: 0.60;
+  transition: 0.3s;
+}
+
+.about-container:hover .about-text-first {
+  opacity:0.3;
+}
+.about-container:hover .about-text-second {
   opacity:0.3;
 }
 
-.about-text-name {
+.about-text-name-first {
+  letter-spacing: 0.2em;
+  left: 3.1%;
   position:absolute;
   text-align: left;
-  font-family: 'Abel';
-  font-size: 6.5vw;
+  font-family: 'Poppins';
+  font-size: 5.5vw;
   color: rgb(100,100,100);
   opacity: 0;
   transition: 0.3s;
 }
 
-.about-container:hover .about-text-name{
+.about-text-name-second {
+  letter-spacing: 0.5em;
+  left: 3.1%;
+  top: 25%;
+  position:absolute;
+  text-align: left;
+  font-family: 'Poiret';
+  font-size: 7vw;
+  color: rgb(100,100,100);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.about-container:hover .about-text-name-first{
   color: rgb(64, 185, 189);
-  opacity: 0.8;
+  opacity: 1;
+}
+
+.about-container:hover .about-text-name-second{
+  color: rgb(64, 185, 189);
+  opacity: 1;
 }
 
 .darkergrey {
