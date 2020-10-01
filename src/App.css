@@ -257,6 +257,18 @@ body {
   text-align: center;
 }
 
+#website-pic {
+  background-image:url('Pictures/Website.jpg');
+  background-size:contain;
+  background-repeat: no-repeat;
+  margin-top: 5%;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width:30vw;
+  height: 30vh;
+}
+
 
 *,*::before,*::after{
   box-sizing: border-box;

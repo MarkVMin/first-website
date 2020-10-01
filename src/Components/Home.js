@@ -98,6 +98,7 @@ const Home = () => {
             This website! Click the image to see the full article!
           </p>
         </div>
+        <div id = "website-pic" data-aos="fade-up"/>
       </div>
     </div>
     </motion.div>

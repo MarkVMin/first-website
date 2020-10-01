@@ -9,6 +9,7 @@ import About from './Components/About';
 import {AnimatePresence} from 'framer-motion';
 import ScrollToTop from './Components/ScrollToTop';
 import { ParallaxProvider} from 'react-scroll-parallax';
+import "bootstrap/dist/css/bootstrap.css";
 
 AOS.init({duration: 1200});
 
